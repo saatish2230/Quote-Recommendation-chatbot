@@ -5,7 +5,7 @@
 
 // ── Configuration ─────────────────────────────────────────────
 const CONFIG = {
-  API_URL: "http://localhost:5005/webhooks/rest/webhook",
+  API_URL: "https://quote-recommendation-chatbot-production.up.railway.app/webhooks/rest/webhook",
   SENDER:  "user",
 };
 
