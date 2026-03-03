@@ -1,0 +1,69 @@
+version: "3.1"
+
+intents:
+  - greet
+  - sad_quote
+  - motivation_quote
+  - love_quote
+  - goodbye
+  - bot_challenge
+
+responses:
+
+  utter_greet:
+    - text: "Hello! 😊 Tell me your mood and I will share a quote for you."
+
+  utter_sad_quote:
+    - text: "Tough times never last, but tough people do."
+    - text: "Every storm runs out of rain."
+    - text: "Stars can't shine without darkness."
+    - text: "This too shall pass."
+    - text: "Difficult roads often lead to beautiful destinations."
+    - text: "Pain makes you stronger."
+    - text: "Stay strong, better days are coming."
+    - text: "Your struggle is part of your story."
+    - text: "Healing takes time."
+    - text: "Even the darkest night will end and the sun will rise."
+
+  utter_motivation_quote:
+    - text: "Success is not final, failure is not fatal."
+    - text: "Dream big and dare to fail."
+    - text: "Push yourself because no one else will do it for you."
+    - text: "Small steps every day lead to big results."
+    - text: "Your only limit is your mind."
+    - text: "Discipline is the key to success."
+    - text: "Consistency beats talent."
+    - text: "Work hard in silence, let success make the noise."
+    - text: "Do something today your future self will thank you for."
+    - text: "Believe you can and you're halfway there."
+
+  utter_love_quote:
+    - text: "Love is composed of a single soul inhabiting two bodies."
+    - text: "Where there is love, there is life."
+    - text: "You are my today and all of my tomorrows."
+    - text: "Love is not about possession, it's about appreciation."
+    - text: "True love stories never have endings."
+    - text: "Love makes everything beautiful."
+    - text: "In your smile, I see something more beautiful than stars."
+    - text: "Love is the bridge between two hearts."
+    - text: "To love and be loved is everything."
+    - text: "Every love story is beautiful."
+
+  utter_goodbye:
+    - text: "Goodbye! 😊 Stay positive."
+    - text: "Take care and keep smiling!"
+    - text: "See you soon!"
+    - text: "Have a wonderful day!"
+    - text: "Stay motivated!"
+    - text: "Keep spreading positivity!"
+    - text: "Come back anytime!"
+    - text: "Bye! Stay strong."
+    - text: "See you next time!"
+    - text: "Have a great day ahead!"
+
+  utter_iamabot:
+    - text: "I am a Quotes Recommendation Chatbot 🤖"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,130 @@
+version: "3.1"
+
+nlu:
+
+# ---------------- GREET ----------------
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - good afternoon
+    - hii bhai
+    - hello bot
+    - hey chatbot
+    - namaste
+    - what's up
+    - hi there
+    - heyy
+    - yo
+    - hello friend
+
+# ---------------- SAD / STRESS / BREAKUP ----------------
+- intent: sad_quote
+  examples: |
+    - i am feeling sad
+    - i feel depressed
+    - i am very upset
+    - i feel low today
+    - mujhe bahut bura lag raha hai
+    - bhai mai dukhi hu
+    - i am crying
+    - i feel lonely
+    - nothing is going right
+    - i am stressed
+    - i am nervous
+    - i have exam stress
+    - i failed in my exam
+    - i am anxious
+    - i had a breakup
+    - my girlfriend left me
+    - i fought with my girlfriend
+    - i feel heartbroken
+    - life is very hard
+    - i am emotionally down
+    - i am not feeling well
+    - i feel hopeless
+    - i am tired of everything
+    - i feel broken inside
+    - everything is falling apart
+
+# ---------------- MOTIVATION / SUCCESS ----------------
+- intent: motivation_quote
+  examples: |
+    - motivate me
+    - i need motivation
+    - give me motivational quote
+    - inspire me
+    - i want success advice
+    - mujhe motivation chahiye
+    - boost my confidence
+    - push me to work hard
+    - i want to achieve success
+    - help me stay positive
+    - i feel lazy motivate me
+    - i need encouragement
+    - give me something powerful
+    - i want to focus on my goals
+    - how to stay consistent
+    - i want to improve myself
+    - i want to grow in life
+    - i want to be successful
+    - i need energy to study
+    - i want to work hard
+    - help me become better
+    - i need self confidence
+
+# ---------------- LOVE / ROMANTIC ----------------
+- intent: love_quote
+  examples: |
+    - give me love quote
+    - romantic line batao
+    - love wali quote do
+    - something about love
+    - relationship quote do
+    - pyar wali line
+    - heart touching quote
+    - i am in love
+    - feeling lovely
+    - i love someone
+    - romantic mood
+    - i am feeling romantic
+    - i miss my girlfriend
+    - love is beautiful
+    - sweet love message
+    - deep love quote
+    - emotional love line
+    - something romantic please
+    - quote for my partner
+    - i want a romantic message
+    - write something for my crush
+
+# ---------------- GOODBYE ----------------
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - talk later
+    - milte hain
+    - catch you later
+    - see you soon
+    - take care
+    - bye bot
+    - i am leaving
+    - i have to go
+    - talk to you later
+
+# ---------------- BOT CHALLENGE ----------------
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - who are you?
+    - what are you?
+    - are you real?
+    - are you a robot?
+    - what is your name?
+    - tell me about yourself

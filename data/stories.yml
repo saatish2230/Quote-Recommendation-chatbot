@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: sad path
+  steps:
+  - intent: sad_quote
+  - action: utter_sad_quote
+
+- story: motivation path
+  steps:
+  - intent: motivation_quote
+  - action: utter_motivation_quote
+
+- story: love path
+  steps:
+  - intent: love_quote
+  - action: utter_love_quote
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
