@@ -2,12 +2,103 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+# Goodbye
+- rule: Goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+# Bot challenge
+- rule: Bot challenge
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+# SAD
+- rule: Sad start
+  steps:
+  - intent: sad_quote
+  - action: utter_sad_quote
+  - action: utter_ask_more
+
+- rule: Sad continue
+  steps:
+  - action: utter_sad_quote
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_sad_quote
+  - action: utter_ask_more
+
+# MOTIVATION
+- rule: Motivation start
+  steps:
+  - intent: motivation_quote
+  - action: utter_motivation_quote
+  - action: utter_ask_more
+
+- rule: Motivation continue
+  steps:
+  - action: utter_motivation_quote
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_motivation_quote
+  - action: utter_ask_more
+
+# LOVE
+- rule: Love start
+  steps:
+  - intent: love_quote
+  - action: utter_love_quote
+  - action: utter_ask_more
+
+- rule: Love continue
+  steps:
+  - action: utter_love_quote
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_love_quote
+  - action: utter_ask_more
+
+# HAPPY
+- rule: Happy start
+  steps:
+  - intent: happy_quote
+  - action: utter_happy_quote
+  - action: utter_ask_more
+
+- rule: Happy continue
+  steps:
+  - action: utter_happy_quote
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_happy_quote
+  - action: utter_ask_more
+
+# HUMOR
+- rule: Humor start
+  steps:
+  - intent: humor_quote
+  - action: utter_humor_quote
+  - action: utter_ask_more
+
+- rule: Humor continue
+  steps:
+  - action: utter_humor_quote
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_humor_quote
+  - action: utter_ask_more
+
+# NO after ask_more
+- rule: Ask category after no
+  steps:
+  - action: utter_ask_more
+  - intent: deny
+  - action: utter_ask_category
+
+# NO after ask_category
+- rule: Exit after category no
+  steps:
+  - action: utter_ask_category
+  - intent: deny
+  - action: utter_goodbye

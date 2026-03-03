@@ -5,6 +5,10 @@ intents:
   - sad_quote
   - motivation_quote
   - love_quote
+  - happy_quote
+  - humor_quote
+  - affirm
+  - deny
   - goodbye
   - bot_challenge
 
@@ -12,7 +16,21 @@ responses:
 
   utter_greet:
     - text: "Hello! 😊 Tell me your mood and I will share a quote for you."
+    - text: "Hi there! 🌟 How are you feeling today?"
+    - text: "Welcome! 💫 Tell me your mood — Sad, Happy, Motivation, Love or Humor?"
 
+  utter_ask_category:
+    - text: "What kind of quote would you like? Sad, Motivation, Love, Happy or Humor?"
+
+  utter_check_feeling:
+    - text: "Are you feeling a little better now?"
+    - text: "Did that help you feel better?"
+
+  utter_ask_more:
+    - text: "Would you like another quote?"
+    - text: "Do you want one more?"
+
+  # ---------------- SAD QUOTES ----------------
   utter_sad_quote:
     - text: "Tough times never last, but tough people do."
     - text: "Every storm runs out of rain."
@@ -25,6 +43,7 @@ responses:
     - text: "Healing takes time."
     - text: "Even the darkest night will end and the sun will rise."
 
+  # ---------------- MOTIVATION QUOTES ----------------
   utter_motivation_quote:
     - text: "Success is not final, failure is not fatal."
     - text: "Dream big and dare to fail."
@@ -37,6 +56,7 @@ responses:
     - text: "Do something today your future self will thank you for."
     - text: "Believe you can and you're halfway there."
 
+  # ---------------- LOVE QUOTES ----------------
   utter_love_quote:
     - text: "Love is composed of a single soul inhabiting two bodies."
     - text: "Where there is love, there is life."
@@ -49,6 +69,33 @@ responses:
     - text: "To love and be loved is everything."
     - text: "Every love story is beautiful."
 
+  # ---------------- HAPPY QUOTES ----------------
+  utter_happy_quote:
+    - text: "Happiness is not by chance, but by choice."
+    - text: "Keep smiling, life is beautiful!"
+    - text: "Your positive energy is contagious."
+    - text: "Happiness looks gorgeous on you."
+    - text: "Smile more, worry less."
+    - text: "Today is a perfect day to be happy."
+    - text: "Joy is the simplest form of gratitude."
+    - text: "Stay happy, stay bright."
+    - text: "Let your smile change the world."
+    - text: "Good vibes only!"
+
+  # ---------------- HUMOR QUOTES ----------------
+  utter_humor_quote:
+    - text: "Why don’t scientists trust atoms? Because they make up everything! 😂"
+    - text: "I told my computer I needed a break, now it won’t stop sending me KitKat ads. 😄"
+    - text: "Life is short. Smile while you still have teeth. 😁"
+    - text: "I’m not lazy, I’m on energy-saving mode. 😎"
+    - text: "Why did the scarecrow win an award? Because he was outstanding in his field! 🌾"
+    - text: "I used to think I was indecisive, but now I’m not too sure. 🤔"
+    - text: "If at first you don’t succeed, then skydiving is not for you. 😆"
+    - text: "My bed and I have a special relationship. We’re perfect for each other. 🛌"
+    - text: "Common sense is like deodorant. The people who need it most never use it. 😂"
+    - text: "I’m on a seafood diet. I see food and I eat it! 🍕"
+
+  # ---------------- GOODBYE ----------------
   utter_goodbye:
     - text: "Goodbye! 😊 Stay positive."
     - text: "Take care and keep smiling!"
@@ -63,6 +110,7 @@ responses:
 
   utter_iamabot:
     - text: "I am a Quotes Recommendation Chatbot 🤖"
+    - text: "I'm your emotion-aware quote buddy! 🤖✨"
 
 session_config:
   session_expiration_time: 60

@@ -101,6 +101,84 @@ nlu:
     - i want a romantic message
     - write something for my crush
 
+# ---------------- HAPPY / POSITIVE MOOD ----------------
+- intent: happy_quote
+  examples: |
+    - i am feeling happy
+    - i feel great today
+    - i am in a good mood
+    - life is beautiful
+    - i am enjoying today
+    - i feel awesome
+    - i am feeling positive
+    - today is a good day
+    - i am smiling
+    - everything is going well
+    - i feel blessed
+    - i am excited
+    - i want happy quote
+    - i feel amazing
+    - i am proud of myself
+    - i am grateful
+
+# ---------------- HUMOR / FUNNY ----------------
+- intent: humor_quote
+  examples: |
+    - tell me something funny
+    - make me laugh
+    - i need a joke
+    - say something humorous
+    - funny quote please
+    - crack a joke
+    - i want humor
+    - entertain me
+    - tell me a meme line
+    - say something silly
+    - i am bored make me laugh
+    - give me a funny line
+    - something hilarious please
+    - joke sunaao
+    - make me smile with humor
+
+# ---------------- AFFIRM (YES / POSITIVE RESPONSE) ----------------
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - sure
+    - of course
+    - definitely
+    - okay
+    - ok
+    - why not
+    - sounds good
+    - yes please
+    - bilkul
+    - haan
+    - ha bhai
+    - thik hai
+    - i feel better
+    - little better
+    - much better now
+
+# ---------------- DENY (NO / NEGATIVE RESPONSE) ----------------
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not really
+    - i don't think so
+    - no thanks
+    - not now
+    - stop
+    - bas karo
+    - nahi
+    - nah
+    - still sad
+    - not feeling better
+    - i am still upset
+    - not okay
+
 # ---------------- GOODBYE ----------------
 - intent: goodbye
   examples: |
